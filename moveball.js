@@ -72,3 +72,4 @@ function moveBall()
     }
 }
 export default moveBall;
+import resetBall from './resetball'
