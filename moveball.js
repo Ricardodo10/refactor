@@ -1,3 +1,16 @@
+import resetBall from './resetball'
+let movePossible = {
+    left : 0,
+    right : 1,
+    up : 1,
+    down : 0
+};
+let ball = document.querySelector(".ball");
+let paddleLeft = document.querySelector(".Rgauche");
+let paddleRight = document.querySelector(".Rdroite");
+let scoreleft = 0
+let scoreright = 0
+
 
 function moveBall()
 {
@@ -71,5 +84,6 @@ function moveBall()
         
     }
 }
+let startBallMove = setInterval(moveBall, Math.ceil(1000/60));
 export default moveBall;
-import resetBall from './resetball'
+
